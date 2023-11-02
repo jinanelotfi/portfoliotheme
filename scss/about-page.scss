@@ -41,7 +41,7 @@
             background: var(--bg-raye);
             height: auto;
             border: 1px solid var(--light-light-black);
-            flex-basis: 50%;
+            flex-basis: 40%;
             &:hover {
                 border: 1px solid var(--rose-gauche);
                 transition: 0.5s;
@@ -56,23 +56,7 @@
             justify-content: center;
             gap: 2rem;
             width: 100%;
-            flex-basis: 50%;
-
-            .scrolling-text-container {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                width: 100%;
-                border-radius: 35px;
-                background: var(--bg-raye);
-                height: auto;
-                border: 1px solid var(--light-light-black);
-                &:hover {
-                    border: 1px solid var(--rose-gauche);
-                    transition: 0.5s;
-                }
-            }
+            flex-basis: 60%;
 
             .projets-about-section {
                 display: flex;
@@ -80,6 +64,18 @@
                 justify-content: center;
                 gap: 2rem;
                 width: 100%;
+                flex-direction: column;
+
+                .about-image {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+
+                    img {
+                        height: 40px;
+                        width: auto;
+                    }
+                }
 
                 .about-section {
                     display: flex;
@@ -186,7 +182,7 @@
         .contact-go-section {
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             flex-direction: column;
             width: 100%;
             border-radius: 35px;
@@ -194,6 +190,24 @@
             height: auto;
             border: 1px solid var(--light-light-black);
             flex-basis: 50%;
+            padding: 30px;
+
+            h2 {
+                text-transform: uppercase;
+            }
+
+            span {
+                margin-bottom: 15px;
+            }
+
+            p {
+                color: var(--dark-grey);
+                margin-top: 0;
+            }
+
+            h3 {
+                margin: 0;
+            }
         }
     }
 }

@@ -30,5 +30,4 @@
             </a>
         </div>                         
     </div>
-    <!-- < get_template_part('templates/overlay') ?>     -->
 </div>

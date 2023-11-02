@@ -465,7 +465,7 @@
       background: var(--bg-raye);
       height: auto;
       border: 1px solid var(--light-light-black);
-      flex-basis: 50%; }
+      flex-basis: 40%; }
       .about-container .projets .myself-section:hover {
         border: 1px solid var(--rose-gauche);
         transition: 0.5s; }
@@ -476,26 +476,21 @@
       justify-content: center;
       gap: 2rem;
       width: 100%;
-      flex-basis: 50%; }
-      .about-container .projets .line-projets-about-container .scrolling-text-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 100%;
-        border-radius: 35px;
-        background: var(--bg-raye);
-        height: auto;
-        border: 1px solid var(--light-light-black); }
-        .about-container .projets .line-projets-about-container .scrolling-text-container:hover {
-          border: 1px solid var(--rose-gauche);
-          transition: 0.5s; }
+      flex-basis: 60%; }
       .about-container .projets .line-projets-about-container .projets-about-section {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 2rem;
-        width: 100%; }
+        width: 100%;
+        flex-direction: column; }
+        .about-container .projets .line-projets-about-container .projets-about-section .about-image {
+          display: flex;
+          align-items: center;
+          gap: 1rem; }
+          .about-container .projets .line-projets-about-container .projets-about-section .about-image img {
+            height: 40px;
+            width: auto; }
         .about-container .projets .line-projets-about-container .projets-about-section .about-section {
           display: flex;
           justify-content: center;
@@ -577,14 +572,24 @@
     .about-container .contact-container .contact-go-section {
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       flex-direction: column;
       width: 100%;
       border-radius: 35px;
       background: var(--bg-raye);
       height: auto;
       border: 1px solid var(--light-light-black);
-      flex-basis: 50%; }
+      flex-basis: 50%;
+      padding: 30px; }
+      .about-container .contact-container .contact-go-section h2 {
+        text-transform: uppercase; }
+      .about-container .contact-container .contact-go-section span {
+        margin-bottom: 15px; }
+      .about-container .contact-container .contact-go-section p {
+        color: var(--dark-grey);
+        margin-top: 0; }
+      .about-container .contact-container .contact-go-section h3 {
+        margin: 0; }
 
 * {
   box-sizing: border-box; }

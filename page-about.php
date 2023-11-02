@@ -5,18 +5,19 @@ get_header();
 ?>
 
 <div class="about-container">
+
+    <!-- SECTION 1 -->
         <article class="projets">
             <div class="myself-section">
                 <h1>Jinane Lotfi</h1>
-                <p>je suis une web designer basée à san francisco</p>
-                <div class="btn-card">
-                    <a href="<?php the_permalink(); ?>" class="button">
-                        <i class="fa-regular fa-eye" style="color: #ffffff;"></i>
-                    </a>
-                </div> 
             </div>
             <div class="line-projets-about-container">
-                <div class="projets-about-section">                    
+                <div class="projets-about-section">
+                    <div class="about-image">
+                        <img class="image-star" src="<?php echo get_template_directory_uri() . './assets/images/star-2.png'; ?>" alt="signature">
+                        <h1>Un peu de moi</h1>
+                        <img class="image-star" src="<?php echo get_template_directory_uri() . './assets/images/star-2.png'; ?>" alt="signature">
+                    </div>                    
                     <div class="about-section">
                         <img class="image-sign" src="<?php echo get_template_directory_uri() . './assets/images/sign.png'; ?>" alt="signature">
                         <p>Plus à propos de moi</p>
@@ -27,22 +28,46 @@ get_header();
                             </a>
                         </div>                         
                     </div>
-                    <div class="projets-section">
-                        <img class="image-sign" src="<?php echo get_template_directory_uri() . './assets/images/my-works.png'; ?>" alt="pc">
-                        <p>Portfolio</p>
-                        <h2>Projets</h2>
-                        <div class="btn-card">
-                            <a href="<?php the_permalink(); ?>" class="button">
-                                <i class="fa-regular fa-eye" style="color: #ffffff;"></i>
-                            </a>
-                        </div> 
-                    </div>
-
-
                 </div>
             </div>
             
         </article>
+
+        <!-- SECTION 2 -->
+        <article class="contact-container">            
+            <div class="contact-go-section">
+                <h2>Expérience</h2>
+                <span>                    
+                    <p>2007 - 2017</p>
+                    <h3>Framer & Designer</h3>
+                    <p>nom de l'organisme</p>
+                </span>
+
+                <span>
+                    <p>2007 - 2017</p>
+                    <h3>Framer & Designer</h3>
+                    <p>nom de l'organisme</p>
+                </span>
+                
+            </div>
+            <div class="contact-go-section">
+            <h2>Formation</h2>
+                <span>                    
+                    <p>2007 - 2017</p>
+                    <h3>Framer & Designer</h3>
+                    <p>nom de l'organisme</p>
+                </span>
+
+                <span>
+                    <p>2007 - 2017</p>
+                    <h3>Framer & Designer</h3>
+                    <p>nom de l'organisme</p>
+                </span>
+            </div>
+        </article>
+
+        <!-- SECTION 3 -->
+
         <article class="services-container">
             <div class="cv-competences-section">
                 <img class="image-sign" src="<?php echo get_template_directory_uri() . './assets/images/gfonts.png'; ?>" alt="gglfonts">
@@ -76,18 +101,9 @@ get_header();
 
             </div>
         </article>
-        <article class="contact-container">            
-            <div class="contact-go-section">
-                <img class="image-sign" src="<?php echo get_template_directory_uri() . './assets/images/my-works.png'; ?>" alt="pc">
-                <h2>Travaillons ensembles</h2>
-                <div class="btn-card">
-                    <a href="<?php the_permalink(); ?>" class="button">
-                        <i class="fa-regular fa-eye" style="color: #ffffff;"></i>
-                    </a>
-                </div> 
 
-            </div>
-        </article>
+
+        
 
 
     </div>
