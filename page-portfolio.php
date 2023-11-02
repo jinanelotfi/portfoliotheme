@@ -15,12 +15,13 @@ get_header();
 
         $query = new WP_Query($args);
     ?>
-
+<p>Tous les projets</p>
 
         <?php if ($query->have_posts()) : ?>
             <div class="cards-container">
                 <?php while ($query->have_posts()) : $query->the_post(); ?>
-                    <?php get_template_part('templates/project-card'); ?>               
+                    <?php get_template_part('templates/project-card'); ?> 
+                
                 <?php endwhile ?>
             </div>
         <?php else : ?>

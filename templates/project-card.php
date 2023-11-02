@@ -1,11 +1,11 @@
-<?php
+<!-- <?php
     if (isset($context) && $context === 'page_portfolio') {
         $link = wp_get_attachment_url(get_post_thumbnail_id(get_the_ID()));
     } else {
         $image_url = get_permalink();
         $link = $image_url;
     }
-?>
+?> -->
 
 <div class="cards-right" >
     <!-- <div class="image-card"> -->
@@ -25,7 +25,9 @@
         <h1><?php the_title(); ?></h1> 
         </div>
         <div class="btn-card">
-            <button>Plus</button>
+            <a href="<?php the_permalink(); ?>" class="button">
+            <i class="fa-regular fa-eye" style="color: #ffffff;"></i>
+            </a>
         </div>                         
     </div>
     <!-- < get_template_part('templates/overlay') ?>     -->
