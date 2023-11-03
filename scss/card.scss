@@ -13,6 +13,8 @@
         justify-content: center;
         height: 95px;
         margin-bottom: 35px;
+        // transform: scale(0); 
+        // animation: appear-grow .8s ease-out forwards;
 
         img {
             height: 40px;
@@ -39,9 +41,11 @@
             flex-direction: column;
             width: 20rem;
             border-radius: 35px;
-            background: linear-gradient(117deg, rgba(39,37,37,1) 0%, rgba(28,28,28,1) 10%, rgba(39,37,37,1) 20%, rgba(28,28,28,1) 30%, rgba(39,37,37,1) 40%, rgba(28,28,28,1) 50%, rgba(39,37,37,1) 60%, rgba(28,28,28,1) 70%, rgba(39,37,37,1) 80%, rgba(28,28,28,1) 90%, rgba(39,37,37,1) 100%);
+            background: var(--bg-raye);
             height: 23rem;
             border: 1px solid var(--light-light-black);
+            // transform: scale(0); 
+            // animation: appear-grow .8s ease-out forwards;
 
             &:hover {
                 border: 1px solid var(--rose-gauche);

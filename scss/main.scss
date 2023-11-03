@@ -6,6 +6,7 @@
 @import "front-page";
 @import "about-page";
 @import "contact";
+@import "keyframes";
 
 
 
@@ -31,4 +32,10 @@ main {
 
 h1 {
     font-size: 2rem;
+}
+
+.appear {
+    opacity: 0;
+    transform: scale(0); 
+    animation: appear-grow 1s ease-out forwards;
 }

@@ -14,15 +14,7 @@
         animation: scrolling 8s linear infinite;
     }
     
-    @keyframes scrolling {
-        0% {
-        transform: translateX(100%);
-        }
     
-        100% {
-        transform: translateX(-100%);
-        }
-    }
 
 
     .projets {
@@ -43,6 +35,8 @@
             flex-basis: 35%;
             padding: 30px;
             text-align: center;
+            // transform: scale(0); 
+            // animation: appear-grow .8s ease-out forwards;
 
             > p {
                 text-transform: uppercase;
@@ -55,74 +49,70 @@
             }
         }
 
-        .line-projets-about-container {
+        
+        .projets-about-section {
             display: flex;
-            flex-direction: column;
             align-items: center;
-            justify-content: center;
-            gap: 2rem;
+            justify-content: space-between;
             width: 100%;
+            flex-direction: column;
             flex-basis: 60%;
+            gap: 2rem;
+            // transform: scale(0); 
+            // animation: appear-grow .8s ease-out forwards;
 
-            .projets-about-section {
+            .about-image {
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
+                gap: 1rem;
                 width: 100%;
+                justify-content: center;
+                height: 95px;
+
+                img {
+                    height: 40px;
+                    width: auto;
+                }
+
+                h1 {
+                    font-size: 50px;
+                }
+            }
+
+            .about-section {
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                width: 100%;
+                border-radius: 35px;
+                background: var(--bg-raye);
+                border: 1px solid var(--light-light-black);
+                padding: 30px;
+
+                p {
+                    color: var(--dark-grey);
+                    text-align: center;
+                }
+                
+            }
+
+            .projets-section {
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 flex-direction: column;
-
-                .about-image {
-                    display: flex;
-                    align-items: center;
-                    gap: 1rem;
-                    width: 100%;
-                    justify-content: center;
-                    height: 95px;
-
-                    img {
-                        height: 40px;
-                        width: auto;
-                    }
-
-                    h1 {
-                        font-size: 50px;
-                    }
-                }
-
-                .about-section {
-                    display: flex;
-                    justify-content: center;
-                    align-items: flex-end;
-                    width: 100%;
-                    border-radius: 35px;
-                    background: var(--bg-raye);
-                    border: 1px solid var(--light-light-black);
-                    padding: 30px;
-
-                    p {
-                        color: var(--dark-grey);
-                        text-align: center;
-                    }
-                    
-                }
-
-                .projets-section {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-                    width: 100%;
-                    border-radius: 35px;
-                    background: var(--bg-raye);
-                    height: auto;
-                    border: 1px solid var(--light-light-black);
-                    &:hover {
-                        border: 1px solid var(--rose-gauche);
-                        transition: 0.5s;
-                    }
+                width: 100%;
+                border-radius: 35px;
+                background: var(--bg-raye);
+                height: auto;
+                border: 1px solid var(--light-light-black);
+                &:hover {
+                    border: 1px solid var(--rose-gauche);
+                    transition: 0.5s;
                 }
             }
         }
+        
     }
 
     .services-container {
@@ -204,6 +194,8 @@
             border: 1px solid var(--light-light-black);
             flex-basis: 50%;
             padding: 30px;
+            // transform: scale(0); 
+            // animation: appear-grow .8s ease-out forwards;
 
             h2 {
                 text-transform: uppercase;
@@ -236,6 +228,8 @@
             border: 1px solid var(--light-light-black);
             flex-basis: 50%;
             padding: 30px;
+            // transform: scale(0); 
+            // animation: appear-grow .8s ease-out forwards;
 
             h2 {
                 text-transform: uppercase;
@@ -272,9 +266,12 @@
             flex-direction: column;
             width: 100%;
             border-radius: 35px;
-            background: var(--bg-raye);            border: 1px solid var(--light-light-black);
+            background: var(--bg-raye);            
+            border: 1px solid var(--light-light-black);
             gap: 1rem;
             padding: 10px;
+            // transform: scale(0); 
+            // animation: appear-grow .8s ease-out forwards;
 
             &:hover {
                 border: 1px solid var(--rose-gauche);
@@ -319,6 +316,8 @@
             border: 1px solid var(--light-light-black);
             gap: 1rem;
             padding: 10px;
+            // transform: scale(0); 
+            // animation: appear-grow .8s ease-out forwards;
 
             &:hover {
                 border: 1px solid var(--rose-gauche);
@@ -365,6 +364,8 @@
             border: 1px solid var(--light-light-black);
             gap: 1rem;
             padding: 10px;
+            // transform: scale(0); 
+            // animation: appear-grow .8s ease-out forwards;
 
             &:hover {
                 border: 1px solid var(--rose-gauche);
@@ -427,6 +428,8 @@
             flex-basis: 30%;
             padding: 30px;
             gap: 2rem;
+            // transform: scale(0); 
+            // animation: appear-grow .8s ease-out forwards;
 
             h2 {
                 text-transform: uppercase;
@@ -472,6 +475,8 @@
             border: 1px solid var(--light-light-black);
             flex-basis: 65%;
             padding: 30px;
+            // transform: scale(0); 
+            // animation: appear-grow .8s ease-out forwards;
 
             .about-image {
                 display: flex;
@@ -479,7 +484,6 @@
                 gap: 1rem;
                 width: 100%;
                 justify-content: center;
-                height: 95px;
 
                 img {
                     height: 40px;

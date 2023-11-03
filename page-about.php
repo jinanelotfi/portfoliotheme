@@ -8,31 +8,26 @@ get_header();
 
     <!-- SECTION 1 -->
         <article class="projets">
-            <div class="myself-section">
+            <div class="myself-section pin">
                 <p>Developpeuse WEB</p>
                 <h1>Jinane Lotfi</h1>
             </div>
-
-
-            <div class="line-projets-about-container">
-                <div class="projets-about-section">
-                    <div class="about-image">
-                        <img class="image-star" src="<?php echo get_template_directory_uri() . './assets/images/star-2.png'; ?>" alt="signature">
-                        <h1>Un peu de moi</h1>
-                        <img class="image-star" src="<?php echo get_template_directory_uri() . './assets/images/star-2.png'; ?>" alt="signature">
-                    </div>                    
-                    <div class="about-section">                        
-                        <p>Passionnée par le monde de la programmation et du développement web, je suis une développeuse WordPress expérimentée, spécialisée dans la création de sites web exceptionnels. Ma mission consiste à concevoir des sites fonctionnels et esthétiques en utilisant WordPress, le CMS le plus populaire au monde.</p>
-                                             
-                    </div>
+            <div class="projets-about-section pin">
+                <div class="about-image">
+                    <img class="image-star" src="<?php echo get_template_directory_uri() . './assets/images/star-2.png'; ?>" alt="signature">
+                    <h1>Un peu de moi</h1>
+                    <img class="image-star" src="<?php echo get_template_directory_uri() . './assets/images/star-2.png'; ?>" alt="signature">
+                </div>                    
+                <div class="about-section">                        
+                    <p>Passionnée par le monde de la programmation et du développement web, je suis une développeuse WordPress expérimentée, spécialisée dans la création de sites web exceptionnels. Ma mission consiste à concevoir des sites fonctionnels et esthétiques en utilisant WordPress, le CMS le plus populaire au monde.</p>
+                                            
                 </div>
-            </div>
-            
+            </div>            
         </article>
 
         <!-- SECTION 2 -->
         <article class="contact-container">            
-            <div class="experience-go-section">
+            <div class="experience-go-section pin">
                 <h2>Expérience</h2>
                 <span>                    
                     <p>2023</p>
@@ -53,7 +48,7 @@ get_header();
                 </span>
                 
             </div>
-            <div class="formation-go-section">
+            <div class="formation-go-section pin">
             <h2>Formation</h2>
                     <span>                    
                     <p>2023</p>
@@ -86,7 +81,7 @@ get_header();
 
         <!-- Section 3 -->
         <article class="services-container">
-            <div class="contact-section">
+            <div class="contact-section pin">
                 <span class="image-social">
                     <img class="image-sign" src="<?php echo get_template_directory_uri() . './assets/images/linkedin.svg'; ?>" alt="linkedin">
                     <img class="image-sign" src="<?php echo get_template_directory_uri() . './assets/images/github.svg'; ?>" alt="github">
@@ -103,7 +98,7 @@ get_header();
                     </div>   
                 </div>                      
             </div>
-            <div class="contact-go-section">                
+            <div class="contact-go-section pin">                
                 <div class="side-card">
                     <span>
                         <h2>Etes-vous prêt<br>pour travailler <span>ensemble ?</span>
@@ -116,7 +111,7 @@ get_header();
                     </div>   
                 </div>                      
             </div>
-            <div class="about-section">
+            <div class="about-section pin">
                 <img class="image-sign" src="<?php echo get_template_directory_uri() . './assets/images/sign.png'; ?>" alt="signature">
                 <div class="side-card">
                     <span>
@@ -134,7 +129,7 @@ get_header();
 
         <!-- Section 4 COMPETENCES -->
         <!-- SECTION 4 -->
-        <article class="skills-container">            
+        <article class="skills-container pin">            
             <div class="left-skills-section">
                 <h2>Soft Skills</h2>
                 <span>              
@@ -156,7 +151,7 @@ get_header();
                 </span>
                 
             </div>
-            <div class="right-skills-section">
+            <div class="right-skills-section pin">
                 <div class="about-image">
                     <img class="image-star" src="<?php echo get_template_directory_uri() . './assets/images/star-2.png'; ?>" alt="signature">
                     <h1>Mes compétences</h1>

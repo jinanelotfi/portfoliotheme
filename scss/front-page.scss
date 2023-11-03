@@ -13,16 +13,6 @@
         display: inline-block;
         animation: scrolling 8s linear infinite;
     }
-    
-    @keyframes scrolling {
-        0% {
-        transform: translateX(100%);
-        }
-    
-        100% {
-        transform: translateX(-100%);
-        }
-    }
 
 
     .projets {
@@ -44,6 +34,8 @@
             flex-basis: 50%;
             padding: 30px;
             text-align: center;
+            // transform: scale(0); 
+            // animation: appear-grow .8s ease-out forwards;
 
             &:hover {
                 border: 1px solid var(--rose-gauche);
@@ -88,6 +80,8 @@
                 background: var(--bg-raye);
                 height: 60px;
                 border: 1px solid var(--light-light-black);
+                // transform: scale(0); 
+                // animation: appear-grow .8s ease-out forwards;
 
                 &:hover {
                     border: 1px solid var(--rose-gauche);
@@ -103,6 +97,8 @@
                 width: 100%;
                 height: auto;
                 flex: 1;
+                // transform: scale(0); 
+                // animation: appear-grow .8s ease-out forwards;
 
                 .about-section {
                     display: flex;
@@ -208,9 +204,12 @@
             flex-direction: column;
             width: 100%;
             border-radius: 35px;
-            background: var(--bg-raye);            border: 1px solid var(--light-light-black);
+            background: var(--bg-raye);            
+            border: 1px solid var(--light-light-black);
             gap: 1rem;
             padding: 10px;
+            // transform: scale(0); 
+            // animation: appear-grow .8s ease-out forwards;
 
             &:hover {
                 border: 1px solid var(--rose-gauche);
@@ -255,6 +254,8 @@
             border: 1px solid var(--light-light-black);
             gap: 1rem;
             padding: 10px;
+            // transform: scale(0); 
+            // animation: appear-grow .8s ease-out forwards;
 
             &:hover {
                 border: 1px solid var(--rose-gauche);
@@ -307,6 +308,8 @@
             border: 1px solid var(--light-light-black);
             gap: 1rem;
             padding: 10px;
+            // transform: scale(0); 
+            // animation: appear-grow .8s ease-out forwards;
 
             &:hover {
                 border: 1px solid var(--rose-gauche);
@@ -370,6 +373,8 @@
             border: 1px solid var(--light-light-black);
             gap: 1rem;
             padding: 10px;
+            // transform: scale(0); 
+            // animation: appear-grow .8s ease-out forwards;
 
             &:hover {
                 border: 1px solid var(--rose-gauche);

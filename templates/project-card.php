@@ -7,10 +7,8 @@
     }
 ?> -->
 
-<div class="cards-right" >
-    <!-- <div class="image-card"> -->
+<div class="cards-right pin" >
         <?php the_post_thumbnail('full', ['class' => 'sim-image']); ?>
-    <!-- </div> -->
     <div class="info-block">
         <div class="info-card">
             <p><?php

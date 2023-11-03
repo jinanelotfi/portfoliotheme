@@ -4,7 +4,7 @@
 
     <?php while (have_posts()) : the_post(); ?>
         <div class="projet-details">
-            <div class="info-block">
+            <div class="info-block pin">
                 <p><?php
                 $terms = get_the_terms(get_the_ID(), 'categorie');
                 if (!empty($terms)) {
@@ -15,21 +15,35 @@
                 }
                 ?>
                 </p>
-                <h1><?php the_title(); ?></h1>
-                                    
+                <div class="title-project-text">
+                    <img class="image-star" src="<?php echo get_template_directory_uri() . './assets/images/star-2.png'; ?>" alt="signature">
+                    <h1><?php the_title(); ?></h1>
+                    <img class="image-star" src="<?php echo get_template_directory_uri() . './assets/images/star-2.png'; ?>" alt="signature">
+                </div>                                     
             </div>
 
-            <div class="projet-image">
+
+
+
+            <div class="projet-image pin">
                 <?php the_post_thumbnail('full', ['class' => 'sim-image']); ?>
             </div>
-            <div class="contexte">
+            <div class="contexte pin">
                 <h1>Contexte</h1>
                 <p><?php echo get_field('contexte'); ?></p>
             </div>
-            <div class="description">                
+            <div class="description pin">                
                 <div class="text-description">
                     <h1>Description</h1>
                     <p><?php echo get_field('description'); ?></p>
+                    </a>
+                        <?php $github_url = get_field('lien_github'); ?>
+                        <?php if ($github_url): ?>
+                        <a href="<?php echo esc_url($github_url); ?>" class="button">
+                            <i class="fa-brands fa-github" style="color: #ffffff;"></i>
+                        </a>
+                        <?php endif; ?>
+
                 </div>                
                 <div class="list-elements">
                     <h2>Année</h2>
@@ -53,12 +67,12 @@
 
 
         <div class="bottom-block">
-            <div class="contact-single">
+            <div class="contact-single pin">
                 <p>Envie de louer mes services ?</p>
                 <a href="<?php echo esc_url(get_permalink(get_page_by_path('contact'))); ?>" class="bouton-contact">Me Contacter</a>
                 
             </div>
-            <div class="nav-links">
+            <div class="nav-links pin">
                 <div class="nav-links-container">
                     <a href="<?php echo get_permalink(get_adjacent_post(false, '', false)); ?>" class="nav-link prev-link">
                         <span class="nav-thumbnail prev-img">

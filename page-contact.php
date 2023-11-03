@@ -5,7 +5,7 @@ get_header();
 ?>
 
 <main class="page-contact-container">
-    <div class="side-contact">
+    <div class="side-contact pin">
         <div class="contact-icones">
             <h2>Informations de contact</h2>
             <div class="mail">
@@ -38,13 +38,18 @@ get_header();
         </div>
         <div class="social-info">
             <h2>Réseaux sociaux</h2>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+            <div class="social-icones">
+                <a href="https://github.com/jinanelotfi" class="button">
+                    <i class="fa-brands fa-github" style="color: #ffffff;"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/jinane-lotfi-9b6336294/" class="button">
+                    <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
+            </a>
+            </div>
+            
         </div>    
     </div>
-    <div class="contact-container">
-        <!-- Modal content -->
+    <div class="contact-container pin">
         <div class="box">                  
             <div class="contact-box">
                 <h2>Travaillons <span>ensemble</span></h2>

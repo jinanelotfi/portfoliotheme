@@ -3,7 +3,7 @@
 
     <div class="home-container">
         <article class="projets">
-            <div class="myself-section">
+            <div class="myself-section pin">
                 <p>Developpeuse WEB</p>
                 <h1>Jinane Lotfi</h1>
                 <div class="description-self-container">
@@ -17,10 +17,10 @@
                 
             </div>
             <div class="line-projets-about-container">
-                <div class="scrolling-text-container">
+                <div class="scrolling-text-container pin">
                     <marquee behavior="scroll" direction="left">Derniers projets à la <strong>une. </strong>Derniers projets à la <strong>une. </strong>Derniers projets à la <strong>une. </strong>Derniers projets à la <strong>une. </strong>Derniers projets à la <strong>une. </strong>Derniers projets à la <strong>une. </strong>Derniers projets à la <strong>une. </strong>Derniers projets à la <strong>une. </strong>Derniers projets à la <strong>une. </strong>Derniers projets à la <strong>une. </strong>Derniers projets à la <strong>une. </strong>Derniers projets à la <strong>une. </strong></marquee>
                 </div>
-                <div class="projets-about-section">                    
+                <div class="projets-about-section pin">                    
                     <div class="about-section">
                         <img class="image-sign" src="<?php echo get_template_directory_uri() . './assets/images/sign.png'; ?>" alt="signature">
                         <div class="side-card">
@@ -56,7 +56,7 @@
 
         <!-- Section 2 -->
         <article class="services-container">
-            <div class="cv-competences-section">
+            <div class="cv-competences-section pin">
                 <img class="image-sign" src="<?php echo get_template_directory_uri() . './assets/images/sign.png'; ?>" alt="signature">
                 <div class="side-card">
                     <span>
@@ -71,7 +71,7 @@
                 </div>                      
             </div>
 
-            <div class="competences-section">
+            <div class="competences-section pin">
                 <span class="competences-icones">
                     <i class="fa-brands fa-square-js" style="color: #ffffff;"></i>
                     <i class="fa-brands fa-html5" style="color: #ffffff;"></i>
@@ -91,7 +91,7 @@
                 </div>                      
             </div>
 
-            <div class="contact-section">
+            <div class="contact-section pin">
                 <span class="image-social">
                     <img class="image-sign" src="<?php echo get_template_directory_uri() . './assets/images/linkedin.svg'; ?>" alt="linkedin">
                     <img class="image-sign" src="<?php echo get_template_directory_uri() . './assets/images/github.svg'; ?>" alt="github">
@@ -113,7 +113,7 @@
 
         <!-- Section 3 -->
         <article class="contact-container">           
-            <div class="contact-go-section">                
+            <div class="contact-go-section pin">                
                 <div class="side-card">
                     <span>
                         <h2>Etes-vous prêt<br>pour travailler <span>ensemble ?</span>
