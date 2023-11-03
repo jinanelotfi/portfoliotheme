@@ -50,12 +50,11 @@
                             </div>   
                         </div>                      
                     </div>
-
-
                 </div>
-            </div>
-            
+            </div>            
         </article>
+
+        <!-- Section 2 -->
         <article class="services-container">
             <div class="cv-competences-section">
                 <img class="image-sign" src="<?php echo get_template_directory_uri() . './assets/images/sign.png'; ?>" alt="signature">
@@ -110,6 +109,9 @@
                 </div>                      
             </div>
         </article>
+        <!-- Fin section 2 -->
+
+        <!-- Section 3 -->
         <article class="contact-container">           
             <div class="contact-go-section">                
                 <div class="side-card">
@@ -124,10 +126,6 @@
                     </div>   
                 </div>                      
             </div>
-
-
-
-
         </article>
 
 

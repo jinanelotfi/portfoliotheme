@@ -47,7 +47,7 @@ get_header();
         <!-- Modal content -->
         <div class="box">                  
             <div class="contact-box">
-                <h2>Travaillons ensemble</h2>
+                <h2>Travaillons <span>ensemble</span></h2>
                 <?php echo do_shortcode('[contact-form-7 id="0e27346" title="Contact"]'); ?>
             </div>           
         </div>

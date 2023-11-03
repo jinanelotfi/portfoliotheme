@@ -15,7 +15,11 @@ get_header();
 
         $query = new WP_Query($args);
     ?>
-<p>Tous les projets</p>
+        <div class="all-projects-text">
+            <img class="image-star" src="<?php echo get_template_directory_uri() . './assets/images/star-2.png'; ?>" alt="signature">
+            <h1>Tous mes projets</h1>
+            <img class="image-star" src="<?php echo get_template_directory_uri() . './assets/images/star-2.png'; ?>" alt="signature">
+        </div>     
 
         <?php if ($query->have_posts()) : ?>
             <div class="cards-container">

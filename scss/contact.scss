@@ -25,6 +25,10 @@
             height: auto;
             gap: 2rem;
 
+            h2 {
+                font-size: 30px;
+            }
+
             .mail {
                 display: flex;
                 justify-content: flex-start;
@@ -166,6 +170,18 @@
                 /* align-items: center; */
                 flex-direction: column;
                 width: 80%;
+
+                h2 {
+                    font-size: 30px;
+                    
+                    span {
+                        display: inline-block;
+                        background: var(--bg-rose-violet);
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
     
                 > p {
                     display: flex;
