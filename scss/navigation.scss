@@ -1,6 +1,6 @@
-// .container-burger {
-//     display: none;
-// }
+.container-burger {
+    display: none;
+}
 
 .container-navigation {
     display: flex;
@@ -40,12 +40,23 @@
 }
 
 // Menu burger 
-// @media screen and (max-width: 480px) {
-//     .container-burger {
-//         display: block;
-//     }
+@media screen and (max-width: 768px) {
+    .container-navigation {
+        flex-direction: column;
+        align-items: center;
 
-//     .container-navigation {
-//         display: none;
-//     }
-// }
+        .logo-site {
+            margin: 0;
+        }
+    } 
+}
+
+@media screen and (max-width: 480px) {
+    .container-burger {
+        display: block;
+    }
+
+    .container-navigation {
+        display: none;
+    }
+}

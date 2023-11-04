@@ -27,9 +27,9 @@
         </div>               
     </nav>
 
-    <!-- <nav class="container-burger" >
+    <nav class="container-burger" >
         <div class="nav-burger">            
-            < 
+            <?php 
                 wp_nav_menu([
                     'theme_location' => 'toggle',
                     'container' => false,
@@ -38,11 +38,11 @@
             ?>
         </div>     
         <div class="toggler-container">
-            <img class="logo-site" src="< echo $logo[0] ?>" alt="logo">
+            <img class="logo-site" src="<?php echo $logo[0] ?>" alt="logo">
             <button class="nav-toggler" aria-controls="burger-menu" aria-expanded="false">
                 <span class="line l1"></span>
                 <span class="line l2"></span>
                 <span class="line l3"></span>
             </button>             
         </div>          
-    </nav> -->
+    </nav>

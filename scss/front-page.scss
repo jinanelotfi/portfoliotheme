@@ -97,8 +97,6 @@
                 width: 100%;
                 height: auto;
                 flex: 1;
-                // transform: scale(0); 
-                // animation: appear-grow .8s ease-out forwards;
 
                 .about-section {
                     display: flex;
@@ -407,6 +405,98 @@
                 }
             }
 
+        }
+    }
+}
+
+
+// Responsive
+@media screen and (max-width: 768px) {
+    .home-container {
+        .projets {
+            flex-wrap: wrap;
+
+            .myself-section {
+                flex-basis: auto;
+            }
+
+            .line-projets-about-container {
+                flex-basis: 100%;
+
+                .about-section,
+                .projet-section {
+                    height: 100%;
+                }
+            }
+
+        } 
+
+        .services-container {
+            flex-wrap: wrap;
+    
+            .cv-competences-section {
+                flex-basis: 40%;
+            }
+    
+            .competences-section {
+                flex-basis: 50%;
+            }
+    
+            .contact-section {
+                flex-basis: 100%;
+            }
+        }
+
+        .contact-container {
+            .contact-go-section {
+            flex-basis: 100%;
+        }
+        }
+        
+    }
+
+    
+}
+
+@media screen and (max-width: 480px) {
+    .home-container {
+        .projets {
+            .line-projets-about-container {
+                .projets-about-section {
+                    flex-wrap: wrap;
+                    margin-top: 2rem;
+
+                    .about-section {
+                        height: auto;
+                    }
+    
+                    .projet-section {
+                        height: auto;
+                    }
+                }                
+            }
+        } 
+
+        .services-container {    
+            .cv-competences-section {
+                flex-basis: 100%;
+            }
+    
+            .competences-section {
+                flex-basis: 100%;
+            }
+    
+        }      
+        
+        .contact-container {
+            .contact-go-section {
+                .side-card {
+                    h2 {
+                        font-size: 22px;
+                    }
+                }
+            }
+            
         }
     }
 }
