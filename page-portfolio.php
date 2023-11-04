@@ -4,7 +4,7 @@
 get_header();
 ?>
 
-<div class="page-portfolio">
+<main class="page-portfolio">
 
     <?php
         // WP_Query pour afficher les éléments du CPT "projet"
@@ -60,6 +60,6 @@ get_header();
         endwhile;
     endif;
     ?> -->
-</div>
+</main>
 
 <?php get_footer(); ?>

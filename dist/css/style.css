@@ -142,6 +142,38 @@
               cursor: pointer;
               transition: 0.5s; }
 
+@media screen and (max-width: 768px) {
+  .home-container .projets {
+    flex-wrap: wrap; }
+    .home-container .projets .myself-section {
+      flex-basis: auto; }
+    .home-container .projets .line-projets-about-container {
+      flex-basis: 100%; }
+      .home-container .projets .line-projets-about-container .about-section,
+      .home-container .projets .line-projets-about-container .projet-section {
+        height: 100%; }
+  .home-container .services-container {
+    flex-wrap: wrap; }
+    .home-container .services-container .cv-competences-section {
+      flex-basis: 40%; }
+    .home-container .services-container .competences-section {
+      flex-basis: 50%; }
+    .home-container .services-container .contact-section {
+      flex-basis: 100%; }
+  .home-container .contact-container .contact-go-section {
+    flex-basis: 100%; } }
+
+@media screen and (max-width: 768px) {
+  .page-portfolio {
+    margin: 1rem 30px 5rem 30px; }
+    .page-portfolio .all-projects-text h1 {
+      font-size: 26px;
+      text-align: center; } }
+
+@media screen and (max-width: 480px) {
+  .page-portfolio .cards-container .cards-right {
+    width: unset; } }
+
 .projet-details {
   display: flex;
   align-items: center;
