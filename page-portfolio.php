@@ -32,34 +32,6 @@ get_header();
             <h1>Pas de projet</h1>    
         <?php endif; ?>
         <?php wp_reset_postdata() ?>
-
-
-
-    <div class="side-cards-container">
-        <div class="cards-left">
-
-        </div>
-    </div>
-    <div class="all-projects-container">
-        <div class="all-projects">
-
-        </div>
-        <div class="cards-right">
-
-        </div>
-    </div>
-
-
-
-
-    <!-- <
-    if (have_posts()) :
-        while (have_posts()) :
-            the_post();
-            the_content();
-        endwhile;
-    endif;
-    ?> -->
 </main>
 
 <?php get_footer(); ?>

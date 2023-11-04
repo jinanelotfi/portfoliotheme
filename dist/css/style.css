@@ -359,6 +359,37 @@
     cursor: pointer;
     transition: 0.5s; }
 
+@media screen and (max-width: 768px) {
+  .single-projet .projet-details .info-block {
+    margin: 0; }
+    .single-projet .projet-details .info-block .title-project-text h1 {
+      font-size: 26px;
+      text-align: center; } }
+
+@media screen and (max-width: 480px) {
+  .single-projet .projet-details {
+    margin: auto 30px; }
+    .single-projet .projet-details .contexte h1,
+    .single-projet .projet-details .contexte p {
+      text-align: center; }
+    .single-projet .projet-details .description {
+      flex-direction: column-reverse; }
+      .single-projet .projet-details .description .text-description {
+        margin: 33px 0;
+        text-align: center; }
+        .single-projet .projet-details .description .text-description h1,
+        .single-projet .projet-details .description .text-description p {
+          text-align: center; }
+      .single-projet .projet-details .description .list-elements {
+        width: 100%; }
+  .single-projet .bottom-block .contact-single {
+    flex-direction: column;
+    gap: 1rem; }
+  .single-projet .bottom-block .nav-links {
+    margin: 1rem 0 2rem 0; }
+    .single-projet .bottom-block .nav-links .nav-links-container {
+      margin: 0 48px; } }
+
 .home-container {
   display: flex;
   justify-content: center;
