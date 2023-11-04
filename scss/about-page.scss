@@ -270,8 +270,6 @@
             border: 1px solid var(--light-light-black);
             gap: 1rem;
             padding: 10px;
-            // transform: scale(0); 
-            // animation: appear-grow .8s ease-out forwards;
 
             &:hover {
                 border: 1px solid var(--rose-gauche);
@@ -364,8 +362,6 @@
             border: 1px solid var(--light-light-black);
             gap: 1rem;
             padding: 10px;
-            // transform: scale(0); 
-            // animation: appear-grow .8s ease-out forwards;
 
             &:hover {
                 border: 1px solid var(--rose-gauche);
@@ -428,8 +424,6 @@
             flex-basis: 30%;
             padding: 30px;
             gap: 2rem;
-            // transform: scale(0); 
-            // animation: appear-grow .8s ease-out forwards;
 
             h2 {
                 text-transform: uppercase;
@@ -475,8 +469,6 @@
             border: 1px solid var(--light-light-black);
             flex-basis: 65%;
             padding: 30px;
-            // transform: scale(0); 
-            // animation: appear-grow .8s ease-out forwards;
 
             .about-image {
                 display: flex;
@@ -534,6 +526,150 @@
                         color: var(--dark-grey);
                         text-align: center;
                         font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Responsive
+@media screen and (max-width: 768px) {
+    .about-container {
+        .projets {
+            flex-direction: column;
+
+            .myself-section {
+                width: 60%;
+                margin: 0 auto;
+            }
+        }
+
+        .services-container {
+            flex-wrap: wrap;
+
+            .contact-section {
+                flex-basis: 45%;
+            }
+
+
+            .contact-go-section {
+                flex-basis: 100%;
+                order: 1;
+            }
+
+            .about-section {
+                flex-basis: 45%;
+            }
+        }
+
+        .skills-container {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .about-container {
+        .projets {
+            gap: 2rem;
+
+            .myself-section {
+                width: 100%;
+
+                h1 {
+                    font-size: 22px;
+                }
+            }
+
+            .projets-about-section {
+                .about-image h1 {
+                    font-size: 26px;
+                    text-align: center;
+                }
+            }
+        }
+
+        .contact-container {
+            flex-direction: column;
+        }
+
+        .services-container {
+
+            .contact-section,
+            .about-section {
+                flex-basis: 100%;
+            }
+
+            .contact-go-section {
+                height: 12rem;
+                align-items: flex-end;
+
+                .side-card {
+                    h2 {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+
+        .skills-container {
+
+            .left-skills-section {
+
+                h2 {
+                    text-align: center;
+                }
+
+                span h3 {
+                    font-size: 16px;
+                    
+                }
+            }
+
+            .poly {
+                display: flex;
+                flex-direction: column;
+                gap: 0;
+                margin-bottom: 0;
+
+                span {
+                    margin-bottom: 10px;
+                }
+
+                i {
+                    // order: 1;
+                }
+
+                h3 {
+                    // order: 2;
+                }
+
+                p {
+                    text-align: center;
+                    margin-left: 38px;
+                }
+            }
+
+            .right-skills-section {
+                padding: 0;
+
+                .about-image {
+                    padding: 20px; 
+                    gap: 0.5rem;        
+                
+                    h1 {
+                        font-size: 20px;
+                        text-align: center;
+                    }
+                }
+
+                .explication-container {
+                    .explication-card {
+                        width: 100%;
+                        padding: 26px;
                     }
                 }
             }

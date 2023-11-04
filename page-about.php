@@ -144,9 +144,11 @@ get_header();
                     <i class="fa-solid fa-puzzle-piece" style="color: #ffffff;"></i>
                     <h3>Polyvalente</h3>
                 </span>
-                <span>
-                    <i class="fa-solid fa-comments" style="color: #ffffff;"></i>
-                    <h3>Polyglote</h3>
+                <span class="poly">
+                    <span>
+                        <i class="fa-solid fa-comments" style="color: #ffffff;"></i>
+                        <h3>Polyglote</h3>
+                    </span>                    
                     <p>Français<br>Anglais<br>Arabe</p>
                 </span>
                 
@@ -159,18 +161,18 @@ get_header();
                 </div>    
                 
                 <div class="explication-container">
-                    <div class="explication-card">
+                    <div class="explication-card pin">
                         <h2>Développement</h2>                        
                         <p>Je conçois des sites web exceptionnels en mettant l'accent sur la qualité et l'originalité. Mon expertise en responsive design garantit une expérience utilisateur optimale sur tous les dispositifs. J'ai une expérience solide en gestion de projet, une sensibilité aux principes du Green code pour des sites plus respectueux de l'environnement, et je suis familière avec les méthodologies agiles.                            
                         </p>                                            
                     </div>
-                    <div class="explication-card">                        
+                    <div class="explication-card pin">                        
                         <h2>SEO</h2>                        
                         <p>J'améliore la visibilité en ligne de votre site web. Cela inclut par exemple : l'analyse approfondie de l'optimisation SEO actuelle, la recherche de mots-clés pertinents, le suivi des performances SEO, l'optimisation de la vitesse de chargement, la stratégie de contenu etc. Mon objectif est d'augmenter votre classement dans les moteurs de recherche, générant ainsi plus de trafic organique et de prospects qualifiés pour votre site web.                           
                         </p>       
                                              
                     </div>
-                    <div class="explication-card">                        
+                    <div class="explication-card pin">                        
                         <h2>Outils</h2>                        
                         <span>Wordpress</span>       
                         <span>Elementor</span>       
@@ -179,7 +181,7 @@ get_header();
                         <span>Sass</span>       
                                              
                     </div>
-                    <div class="explication-card">                        
+                    <div class="explication-card pin">                        
                     <h2>Langages</h2>                        
                         <span>HTML</span>       
                         <span>CSS</span>       

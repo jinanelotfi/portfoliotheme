@@ -1017,6 +1017,71 @@
             text-align: center;
             font-size: 16px; }
 
+@media screen and (max-width: 768px) {
+  .about-container .projets {
+    flex-direction: column; }
+    .about-container .projets .myself-section {
+      width: 60%;
+      margin: 0 auto; }
+  .about-container .services-container {
+    flex-wrap: wrap; }
+    .about-container .services-container .contact-section {
+      flex-basis: 45%; }
+    .about-container .services-container .contact-go-section {
+      flex-basis: 100%;
+      order: 1; }
+    .about-container .services-container .about-section {
+      flex-basis: 45%; }
+  .about-container .skills-container {
+    flex-direction: column;
+    align-items: center; } }
+
+@media screen and (max-width: 480px) {
+  .about-container .projets {
+    gap: 2rem; }
+    .about-container .projets .myself-section {
+      width: 100%; }
+      .about-container .projets .myself-section h1 {
+        font-size: 22px; }
+    .about-container .projets .projets-about-section .about-image h1 {
+      font-size: 26px;
+      text-align: center; }
+  .about-container .contact-container {
+    flex-direction: column; }
+  .about-container .services-container .contact-section,
+  .about-container .services-container .about-section {
+    flex-basis: 100%; }
+  .about-container .services-container .contact-go-section {
+    height: 12rem;
+    align-items: flex-end; }
+    .about-container .services-container .contact-go-section .side-card h2 {
+      font-size: 22px; }
+  .about-container .skills-container .left-skills-section h2 {
+    text-align: center; }
+  .about-container .skills-container .left-skills-section span h3 {
+    font-size: 16px; }
+  .about-container .skills-container .poly {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 0; }
+    .about-container .skills-container .poly span {
+      margin-bottom: 10px; }
+    .about-container .skills-container .poly p {
+      text-align: center;
+      margin-left: 38px; }
+  .about-container .skills-container .right-skills-section {
+    padding: 0; }
+    .about-container .skills-container .right-skills-section .about-image {
+      padding: 20px;
+      gap: 0.5rem; }
+      .about-container .skills-container .right-skills-section .about-image h1 {
+        font-size: 20px;
+        text-align: center; }
+    .about-container .skills-container .right-skills-section .explication-container .explication-card {
+      width: 100%;
+      padding: 26px; } }
+
 .page-contact-container {
   display: flex;
   justify-content: center;
@@ -1300,6 +1365,13 @@ h1 {
   font-size: 2rem; }
 
 .appear {
-  opacity: 0;
   transform: scale(0);
   animation: appear-grow 1s ease-out forwards; }
+
+.pin:nth-child(1),
+.pin:nth-child(3) {
+  animation-delay: 0.2s; }
+
+.pin:nth-child(2),
+.pin:nth-child(4) {
+  animation-delay: 0.6s; }
