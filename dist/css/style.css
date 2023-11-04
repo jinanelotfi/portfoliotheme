@@ -43,6 +43,8 @@
         text-decoration: none;
         text-transform: uppercase;
         color: var(--white); }
+        .container-navigation .main-navigation .navbar-nav a:hover {
+          color: var(--rose-gauche); }
 
 @media screen and (max-width: 768px) {
   .container-navigation {
@@ -124,7 +126,8 @@
           width: 100%; }
           .page-portfolio .cards-container .cards-right .info-block .info-card p {
             margin: 20px 0 0 0;
-            text-transform: uppercase; }
+            text-transform: uppercase;
+            color: var(--dark-grey); }
           .page-portfolio .cards-container .cards-right .info-block .info-card h1 {
             font-size: 24px; }
         .page-portfolio .cards-container .cards-right .info-block .btn-card {
@@ -219,6 +222,9 @@
     height: auto;
     border: 1px solid var(--light-light-black);
     border-radius: 35px; }
+    .projet-details .contexte:hover {
+      border: 1px solid var(--rose-gauche);
+      transition: .5s; }
     .projet-details .contexte h1 {
       margin-bottom: 0;
       padding: 20px 44px 0;
@@ -240,6 +246,9 @@
     border: 1px solid var(--light-light-black);
     border-radius: 35px;
     padding: 30px; }
+    .projet-details .description:hover {
+      border: 1px solid var(--rose-gauche);
+      transition: .5s; }
     .projet-details .description .text-description {
       display: flex;
       width: 100%;
@@ -735,6 +744,9 @@
       flex-basis: 35%;
       padding: 30px;
       text-align: center; }
+      .about-container .projets .myself-section:hover {
+        border: 1px solid var(--rose-gauche);
+        transition: .5s; }
       .about-container .projets .myself-section > p {
         text-transform: uppercase;
         color: var(--dark-grey); }
@@ -770,6 +782,9 @@
         background: var(--bg-raye);
         border: 1px solid var(--light-light-black);
         padding: 30px; }
+        .about-container .projets .projets-about-section .about-section:hover {
+          border: 1px solid var(--rose-gauche);
+          transition: .5s; }
         .about-container .projets .projets-about-section .about-section p {
           color: var(--dark-grey);
           text-align: center; }
@@ -850,6 +865,9 @@
       border: 1px solid var(--light-light-black);
       flex-basis: 50%;
       padding: 30px; }
+      .about-container .contact-container .experience-go-section:hover {
+        border: 1px solid var(--rose-gauche);
+        transition: .5s; }
       .about-container .contact-container .experience-go-section h2 {
         text-transform: uppercase;
         font-size: 30px; }
@@ -872,6 +890,9 @@
       border: 1px solid var(--light-light-black);
       flex-basis: 50%;
       padding: 30px; }
+      .about-container .contact-container .formation-go-section:hover {
+        border: 1px solid var(--rose-gauche);
+        transition: .5s; }
       .about-container .contact-container .formation-go-section h2 {
         text-transform: uppercase;
         font-size: 30px; }
@@ -1008,6 +1029,9 @@
       flex-basis: 30%;
       padding: 30px;
       gap: 2rem; }
+      .about-container .skills-container .left-skills-section:hover {
+        border: 1px solid var(--rose-gauche);
+        transition: .5s; }
       .about-container .skills-container .left-skills-section h2 {
         text-transform: uppercase;
         margin: 40px auto;
@@ -1039,6 +1063,9 @@
       border: 1px solid var(--light-light-black);
       flex-basis: 65%;
       padding: 30px; }
+      .about-container .skills-container .right-skills-section:hover {
+        border: 1px solid var(--rose-gauche);
+        transition: .5s; }
       .about-container .skills-container .right-skills-section .about-image {
         display: flex;
         align-items: center;
@@ -1161,6 +1188,9 @@
     height: auto;
     border: 1px solid var(--light-light-black);
     flex-basis: 30%; }
+    .page-contact-container .side-contact:hover {
+      border: 1px solid var(--rose-gauche);
+      transition: .5s; }
     .page-contact-container .side-contact .contact-icones {
       display: flex;
       flex-direction: column;
@@ -1270,11 +1300,15 @@
     height: auto;
     border: 1px solid var(--light-light-black);
     flex-basis: 70%; }
+    .page-contact-container .contact-container:hover {
+      border: 1px solid var(--rose-gauche);
+      transition: 0.5s; }
     .page-contact-container .contact-container .box {
       display: flex;
       justify-content: center;
       width: 100%;
-      padding: 49px; }
+      padding: 49px;
+      opacity: 0; }
       .page-contact-container .contact-container .box .contact-box {
         display: flex;
         justify-content: center;
@@ -1356,10 +1390,8 @@
 
 @keyframes appear-grow {
   0% {
-    opacity: 0;
     transform: scale(0.5); }
   100% {
-    opacity: 1;
     transform: scale(1); } }
 
 .toggler-container {
@@ -1433,6 +1465,48 @@
         font-size: 30px;
         text-transform: uppercase; }
 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid var(--dark-white);
+  margin-top: 60px; }
+  footer .footer-class {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+    list-style: none;
+    text-align: center;
+    margin: 30px 0; }
+    footer .footer-class a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: var(--dark-white); }
+      footer .footer-class a:hover {
+        color: var(--rose-gauche); }
+  footer .footer-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7rem; }
+    footer .footer-p p {
+      text-decoration: none;
+      color: var(--dark-white);
+      text-align: center; }
+
+@media screen and (max-width: 480px) {
+  footer {
+    margin: 2rem 0;
+    flex-direction: column; }
+    footer .footer-class {
+      flex-direction: column;
+      gap: 1.5rem;
+      padding: 0;
+      margin-top: 2rem; }
+    footer .footer-p {
+      margin: 0; } }
+
 * {
   box-sizing: border-box; }
 
@@ -1454,7 +1528,7 @@ h1 {
 
 .appear {
   transform: scale(0);
-  animation: appear-grow 1s ease-out forwards; }
+  animation: appear-grow 1s ease-in-out forwards; }
 
 .pin:nth-child(1),
 .pin:nth-child(3) {

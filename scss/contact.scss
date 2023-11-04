@@ -15,8 +15,12 @@
         height: auto;
         border: 1px solid var(--light-light-black);
         flex-basis: 30%;
-        // transform: scale(0); 
-        // animation: appear-grow .8s ease-out forwards;
+
+        &:hover {
+            border: 1px solid var(--rose-gauche);
+            transition: .5s;
+        }
+    
 
         .contact-icones {
             display: flex;
@@ -168,11 +172,18 @@
         height: auto;
         border: 1px solid var(--light-light-black);
         flex-basis: 70%;
+
+        &:hover {
+            border: 1px solid var(--rose-gauche);
+            transition: 0.5s;
+        }
+    
         .box {
             display: flex;
             justify-content: center;
             width: 100%;
             padding: 49px;
+            opacity: 0;
             
             .contact-box {
                 display: flex;

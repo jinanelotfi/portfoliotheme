@@ -26,7 +26,7 @@
                         <div class="side-card">
                             <span>
                                 <p>Plus à propos de moi</p>
-                                <h2>Parcourt</h2>
+                                <h2>Parcours</h2>
                             </span>                            
                             <div class="btn-card">
                                 <a href="<?php echo esc_url(get_permalink(get_page_by_path('about'))); ?>" class="button">

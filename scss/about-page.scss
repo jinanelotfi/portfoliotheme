@@ -35,8 +35,11 @@
             flex-basis: 35%;
             padding: 30px;
             text-align: center;
-            // transform: scale(0); 
-            // animation: appear-grow .8s ease-out forwards;
+            
+            &:hover {
+                border: 1px solid var(--rose-gauche);
+                transition: .5s;
+            }
 
             > p {
                 text-transform: uppercase;
@@ -58,8 +61,6 @@
             flex-direction: column;
             flex-basis: 60%;
             gap: 2rem;
-            // transform: scale(0); 
-            // animation: appear-grow .8s ease-out forwards;
 
             .about-image {
                 display: flex;
@@ -88,6 +89,11 @@
                 background: var(--bg-raye);
                 border: 1px solid var(--light-light-black);
                 padding: 30px;
+
+                &:hover {
+                    border: 1px solid var(--rose-gauche);
+                    transition: .5s;
+                }
 
                 p {
                     color: var(--dark-grey);
@@ -194,8 +200,11 @@
             border: 1px solid var(--light-light-black);
             flex-basis: 50%;
             padding: 30px;
-            // transform: scale(0); 
-            // animation: appear-grow .8s ease-out forwards;
+            
+            &:hover {
+                border: 1px solid var(--rose-gauche);
+                transition: .5s;
+            }
 
             h2 {
                 text-transform: uppercase;
@@ -228,8 +237,11 @@
             border: 1px solid var(--light-light-black);
             flex-basis: 50%;
             padding: 30px;
-            // transform: scale(0); 
-            // animation: appear-grow .8s ease-out forwards;
+            
+            &:hover {
+                border: 1px solid var(--rose-gauche);
+                transition: .5s;
+            }
 
             h2 {
                 text-transform: uppercase;
@@ -314,8 +326,6 @@
             border: 1px solid var(--light-light-black);
             gap: 1rem;
             padding: 10px;
-            // transform: scale(0); 
-            // animation: appear-grow .8s ease-out forwards;
 
             &:hover {
                 border: 1px solid var(--rose-gauche);
@@ -425,6 +435,11 @@
             padding: 30px;
             gap: 2rem;
 
+            &:hover {
+                border: 1px solid var(--rose-gauche);
+                transition: .5s;
+            }
+
             h2 {
                 text-transform: uppercase;
                 margin: 40px auto;
@@ -469,6 +484,11 @@
             border: 1px solid var(--light-light-black);
             flex-basis: 65%;
             padding: 30px;
+
+            &:hover {
+                border: 1px solid var(--rose-gauche);
+                transition: .5s;
+            }
 
             .about-image {
                 display: flex;

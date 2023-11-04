@@ -8,6 +8,7 @@
 @import "contact";
 @import "keyframes";
 @import "nav-burger";
+@import "footer";
 
 
 
@@ -37,7 +38,7 @@ h1 {
 
 .appear {
     transform: scale(0); 
-    animation: appear-grow 1s ease-out forwards;
+    animation: appear-grow 1s ease-in-out forwards;
 }
 
 .pin:nth-child(1),

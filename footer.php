@@ -8,7 +8,7 @@
             ])
         ?>
         <div class="footer-p">
-            <p>Tous droits réservés</p>
+            <p>Developed & designed by Jinane Lotfi</p>
         </div>        
     </footer>
     <?php wp_footer() ?>

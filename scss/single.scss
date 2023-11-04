@@ -12,8 +12,6 @@
         margin-left: 48px;
         justify-content: center;
         flex-direction: column;
-        // transform: scale(0); 
-        // animation: appear-grow .8s ease-out forwards;
 
         p {
             margin-bottom: 0;
@@ -44,8 +42,6 @@
         display: flex;
         margin-bottom: 30px;
         width: 100%;
-        // transform: scale(0); 
-        // animation: appear-grow .8s ease-out forwards;
 
         img {
             height: 50vh;
@@ -62,8 +58,11 @@
         height: auto;
         border: 1px solid var(--light-light-black);
         border-radius: 35px;
-        // transform: scale(0); 
-        // animation: appear-grow .8s ease-out forwards;
+
+        &:hover {
+            border: 1px solid var(--rose-gauche);
+            transition: .5s;
+        }
 
         h1 {
             margin-bottom: 0;
@@ -91,8 +90,11 @@
         border: 1px solid var(--light-light-black);
         border-radius: 35px;
         padding: 30px;
-        // transform: scale(0); 
-        // animation: appear-grow .8s ease-out forwards;
+        
+        &:hover {
+            border: 1px solid var(--rose-gauche);
+            transition: .5s;
+        }
 
         .text-description {
             display: flex;

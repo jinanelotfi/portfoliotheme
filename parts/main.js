@@ -1,5 +1,7 @@
 // Réglages appartition des titres
 // On crée l'observateur
+document.addEventListener("DOMContentLoaded", function () {
+
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -16,6 +18,7 @@ const observer = new IntersectionObserver(entries => {
 const pinElements = document.querySelectorAll('.pin');
 pinElements.forEach(pinElement => {
   observer.observe(pinElement);
+});
 });
 
 // Réglages menu hamburger

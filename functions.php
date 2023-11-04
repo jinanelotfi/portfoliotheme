@@ -2,12 +2,10 @@
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 
 function theme_enqueue_styles() {
-    wp_enqueue_style('portfoliotheme-style', get_stylesheet_directory_uri() . '/dist/css/style.css', array(), filemtime(get_stylesheet_directory() . '/dist/css/style.css'));
-    
-    wp_enqueue_script('main-js', get_stylesheet_directory_uri() . '/parts/main.js', array(), filemtime(get_stylesheet_directory() . '/parts/main.js'), true);
-    
+    wp_enqueue_style('portfoliotheme-style', get_stylesheet_directory_uri() . '/dist/css/style.css', array(), filemtime(get_stylesheet_directory() . '/dist/css/style.css'));    
+    wp_enqueue_script('main-js', get_stylesheet_directory_uri() . '/parts/main.js', array(), filemtime(get_stylesheet_directory() . '/parts/main.js'), true);    
     // Script fontawesome
-    wp_enqueue_script('font-awesome-kit', 'https://kit.fontawesome.com/2141edcbd6.js', array(), null);
+    wp_enqueue_script('font-awesome-kit', 'https://kit.fontawesome.com/2141edcbd6.js', array(), null);   
     
 }
 
