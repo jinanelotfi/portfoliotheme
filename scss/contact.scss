@@ -168,19 +168,15 @@
         height: auto;
         border: 1px solid var(--light-light-black);
         flex-basis: 70%;
-        // transform: scale(0); 
-        // animation: appear-grow .8s ease-out forwards;
-
         .box {
             display: flex;
-            justify-content: flex-start;
+            justify-content: center;
             width: 100%;
             padding: 49px;
             
             .contact-box {
                 display: flex;
                 justify-content: center;
-                /* align-items: center; */
                 flex-direction: column;
                 width: 80%;
 
@@ -227,11 +223,11 @@
                 .button {
                     padding: 1rem 2rem;
                     font-family: inherit;
-                    width: 60%;
+                    width: 100%;
                     color: var(--dark-white);
                     font-size: 20px;
                     background: linear-gradient(90deg, #df4d4d 0%, #693dbf 100%);
-                    padding: 15px;
+                    padding: 9px;
                     border-radius: 20px;
     
                     &:hover {
@@ -249,8 +245,66 @@
     }
 }
 
-
-
 .wpcf7 form.invalid .wpcf7-response-output {
     border-color: var(--red);
+}
+
+// Responsive
+@media screen and (max-width: 768px) {
+    .page-contact-container {
+        .side-contact {
+            .contact-icones {
+                padding: 27px;
+
+                h2 {
+                    font-size: 24px;
+                    margin: 0 0 10px;
+                }
+            }
+        }
+
+        .contact-container {
+            .box {
+                padding: 0;
+
+                .contact-box h2 {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .page-contact-container {
+        flex-direction: column;
+        margin: 20px 30px;
+
+        .side-contact {
+            .contact-icones {
+                padding: 20px 8px;
+
+                h2 {
+                    text-align: center;
+                }
+            }
+        }
+
+        .social-icones {
+            padding: 0 49px 49px;
+        }
+
+        .contact-container {
+            .box { 
+                .contact-box {
+                    width: 90%;                
+                    
+                    h2 {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
 }
