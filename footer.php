@@ -1,4 +1,3 @@
-<!-- < get_template_part('templates/contact'); ?> -->
     <footer>
         <?php 
             wp_nav_menu([

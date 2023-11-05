@@ -1,14 +1,14 @@
-<!-- <?php
+<?php
     if (isset($context) && $context === 'page_portfolio') {
         $link = wp_get_attachment_url(get_post_thumbnail_id(get_the_ID()));
     } else {
         $image_url = get_permalink();
         $link = $image_url;
     }
-?> -->
+?>
 
-<div class="cards-right pin" >
-        <?php the_post_thumbnail('full', ['class' => 'sim-image']); ?>
+<div class="cards-right" >
+    <?php the_post_thumbnail('full', ['class' => 'sim-image']); ?>
     <div class="info-block">
         <div class="info-card">
             <p><?php

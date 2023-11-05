@@ -1,7 +1,5 @@
-// Réglages appartition des titres
+// Réglages appartition des blocs
 // On crée l'observateur
-document.addEventListener("DOMContentLoaded", function () {
-
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -19,7 +17,6 @@ const pinElements = document.querySelectorAll('.pin');
 pinElements.forEach(pinElement => {
   observer.observe(pinElement);
 });
-});
 
 // Réglages menu hamburger
 const hamburgerButton = document.querySelector(".nav-toggler")
@@ -31,3 +28,6 @@ function toggleNav() {
   hamburgerButton.classList.toggle("active")
   navigation.classList.toggle("active")
 }
+
+
+

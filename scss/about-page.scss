@@ -12,11 +12,8 @@
     .scrolling-text-container p {
         display: inline-block;
         animation: scrolling 8s linear infinite;
-    }
+    } 
     
-    
-
-
     .projets {
         display: flex;
         justify-content: space-between;
@@ -35,6 +32,7 @@
             flex-basis: 35%;
             padding: 30px;
             text-align: center;
+            opacity: 0;
             
             &:hover {
                 border: 1px solid var(--rose-gauche);
@@ -52,7 +50,6 @@
             }
         }
 
-        
         .projets-about-section {
             display: flex;
             align-items: center;
@@ -61,6 +58,7 @@
             flex-direction: column;
             flex-basis: 60%;
             gap: 2rem;
+            opacity: 0;
 
             .about-image {
                 display: flex;
@@ -89,7 +87,7 @@
                 background: var(--bg-raye);
                 border: 1px solid var(--light-light-black);
                 padding: 30px;
-
+                
                 &:hover {
                     border: 1px solid var(--rose-gauche);
                     transition: .5s;
@@ -98,8 +96,7 @@
                 p {
                     color: var(--dark-grey);
                     text-align: center;
-                }
-                
+                }                
             }
 
             .projets-section {
@@ -112,13 +109,13 @@
                 background: var(--bg-raye);
                 height: auto;
                 border: 1px solid var(--light-light-black);
+
                 &:hover {
                     border: 1px solid var(--rose-gauche);
                     transition: 0.5s;
                 }
             }
-        }
-        
+        }        
     }
 
     .services-container {
@@ -174,6 +171,7 @@
             height: auto;
             border: 1px solid var(--light-light-black);
             flex-basis: 30%;
+            opacity: 0;
 
             &:hover {
                 border: 1px solid var(--rose-gauche);
@@ -200,6 +198,7 @@
             border: 1px solid var(--light-light-black);
             flex-basis: 50%;
             padding: 30px;
+            opacity: 0;
             
             &:hover {
                 border: 1px solid var(--rose-gauche);
@@ -237,6 +236,7 @@
             border: 1px solid var(--light-light-black);
             flex-basis: 50%;
             padding: 30px;
+            opacity: 0;
             
             &:hover {
                 border: 1px solid var(--rose-gauche);
@@ -282,6 +282,7 @@
             border: 1px solid var(--light-light-black);
             gap: 1rem;
             padding: 10px;
+            opacity: 0;
 
             &:hover {
                 border: 1px solid var(--rose-gauche);
@@ -308,9 +309,7 @@
                     margin-top: 20px;
                     font-size: 20px;
                 }
-            }
-
-            
+            }            
         }
         
         .contact-go-section {
@@ -326,6 +325,7 @@
             border: 1px solid var(--light-light-black);
             gap: 1rem;
             padding: 10px;
+            opacity: 0;
 
             &:hover {
                 border: 1px solid var(--rose-gauche);
@@ -420,6 +420,7 @@
         justify-content: space-between;
         gap: 2rem;
         margin: 3rem;
+        opacity: 0;
 
         .left-skills-section {
             display: flex;
@@ -467,9 +468,7 @@
             p {
                 color: var(--dark-grey);
                 margin-top: 0;
-            }
-
-            
+            }            
         }
 
         .right-skills-section {
@@ -484,6 +483,7 @@
             border: 1px solid var(--light-light-black);
             flex-basis: 65%;
             padding: 30px;
+            opacity: 0;
 
             &:hover {
                 border: 1px solid var(--rose-gauche);
@@ -536,6 +536,7 @@
                     border: 1px solid var(--light-light-black);
                     padding: 30px;
                     flex-direction: column;
+                    opacity: 0;
 
                     p {
                         color: var(--dark-grey);
@@ -588,7 +589,6 @@
             align-items: center;
         }
     }
-
 }
 
 @media screen and (max-width: 480px) {
@@ -636,7 +636,6 @@
         }
 
         .skills-container {
-
             .left-skills-section {
 
                 h2 {
@@ -644,8 +643,7 @@
                 }
 
                 span h3 {
-                    font-size: 16px;
-                    
+                    font-size: 16px;                    
                 }
             }
 

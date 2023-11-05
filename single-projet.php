@@ -6,14 +6,14 @@
         <div class="projet-details">
             <div class="info-block pin">
                 <p><?php
-                $terms = get_the_terms(get_the_ID(), 'categorie');
-                if (!empty($terms)) {
-                    foreach ($terms as $term) {
-                        echo $term->name . ' ';
-                        $categoryFound = $term->slug;
+                    $terms = get_the_terms(get_the_ID(), 'categorie');
+                    if (!empty($terms)) {
+                        foreach ($terms as $term) {
+                            echo $term->name . ' ';
+                            $categoryFound = $term->slug;
+                        }
                     }
-                }
-                ?>
+                    ?>
                 </p>
                 <div class="title-project-text">
                     <img class="image-star" src="<?php echo get_template_directory_uri() . './assets/images/star-2.png'; ?>" alt="signature">
@@ -21,10 +21,6 @@
                     <img class="image-star" src="<?php echo get_template_directory_uri() . './assets/images/star-2.png'; ?>" alt="signature">
                 </div>                                     
             </div>
-
-
-
-
             <div class="projet-image pin">
                 <?php the_post_thumbnail('full', ['class' => 'sim-image']); ?>
             </div>
@@ -35,15 +31,13 @@
             <div class="description pin">                
                 <div class="text-description">
                     <h1>Description</h1>
-                    <p><?php echo get_field('description'); ?></p>
+                    <p><?php echo get_field('description'); ?></p>                    
+                    <?php $github_url = get_field('lien_github'); ?>
+                    <?php if ($github_url): ?>
+                    <a href="<?php echo esc_url($github_url); ?>" class="button">
+                        <i class="fa-brands fa-github" style="color: #ffffff;"></i>
                     </a>
-                        <?php $github_url = get_field('lien_github'); ?>
-                        <?php if ($github_url): ?>
-                        <a href="<?php echo esc_url($github_url); ?>" class="button">
-                            <i class="fa-brands fa-github" style="color: #ffffff;"></i>
-                        </a>
-                        <?php endif; ?>
-
+                    <?php endif; ?>
                 </div>                
                 <div class="list-elements">
                     <h2>Année</h2>
@@ -64,13 +58,10 @@
                 </div>
             </div>
         </div>
-
-
         <div class="bottom-block">
             <div class="contact-single pin">
                 <p>Envie de louer mes services ?</p>
-                <a href="<?php echo esc_url(get_permalink(get_page_by_path('contact'))); ?>" class="bouton-contact">Me Contacter</a>
-                
+                <a href="<?php echo esc_url(get_permalink(get_page_by_path('contact'))); ?>" class="bouton-contact">Me Contacter</a>                
             </div>
             <div class="nav-links pin">
                 <div class="nav-links-container">
@@ -93,8 +84,7 @@
         </div>
         
         <a href="<?php echo esc_url(get_permalink(get_page_by_path('portfolio'))); ?>" class="bouton-portfolio">Revenir au Portfolio</a>
-    <?php endwhile; ?>
-    
+    <?php endwhile; ?>   
 
 </main>
 

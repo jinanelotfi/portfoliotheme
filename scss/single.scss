@@ -116,8 +116,7 @@
 
             i {
                 font-size: 50px;
-            }
-            
+            }            
         }
 
         .list-elements {
@@ -137,7 +136,6 @@
             h2 {
                 font-size: 16px;
                 color: var(--dark-grey);
-
             }
 
             p {
@@ -146,7 +144,6 @@
                 text-align: left;
                 font-size: 16px;
                 color: var(--dark-white);
-
             } 
         }
     }
@@ -213,11 +210,8 @@
             color: var(--dark-white);
             text-align: left;
         }
-
     }
 }
-
-
 
 .nav-thumbnail {
     display: none;
@@ -255,7 +249,6 @@
 
 
 // Revenir à tous les projets 
-
 .bouton-portfolio {
     text-decoration: underline;
     color: var(--dark-white);
@@ -265,7 +258,6 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-
 
     &:hover {
         cursor: pointer;

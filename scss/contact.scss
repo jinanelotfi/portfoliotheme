@@ -15,6 +15,7 @@
         height: auto;
         border: 1px solid var(--light-light-black);
         flex-basis: 30%;
+        opacity: 0;
 
         &:hover {
             border: 1px solid var(--rose-gauche);
@@ -172,6 +173,7 @@
         height: auto;
         border: 1px solid var(--light-light-black);
         flex-basis: 70%;
+        opacity: 0;
 
         &:hover {
             border: 1px solid var(--rose-gauche);
@@ -183,7 +185,6 @@
             justify-content: center;
             width: 100%;
             padding: 49px;
-            opacity: 0;
             
             .contact-box {
                 display: flex;
@@ -206,7 +207,6 @@
                 > p {
                     display: flex;
                     flex-direction: column;
-                    // width: 60%;
                 }
     
                 label {
@@ -237,20 +237,14 @@
                     width: 100%;
                     color: var(--dark-white);
                     font-size: 20px;
-                    background: linear-gradient(90deg, #df4d4d 0%, #693dbf 100%);
+                    background: var(--bg-rose-violet);
                     padding: 9px;
                     border-radius: 20px;
     
                     &:hover {
                         cursor: pointer;
                     }
-                }
-    
-                div#wpcf7-f82-o1 {
-                    // width: inherit;
-                }
-    
-                
+                }                   
             }
         }
     }
@@ -284,7 +278,6 @@
             }
         }
     }
-
 }
 
 @media screen and (max-width: 480px) {

@@ -1,8 +1,4 @@
-<?php
-
-
-get_header();
-?>
+<?php get_header(); ?>
 
 <main class="page-contact-container">
     <div class="side-contact pin">
@@ -44,9 +40,8 @@ get_header();
                 </a>
                 <a href="https://www.linkedin.com/in/jinane-lotfi-9b6336294/" class="button">
                     <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
-            </a>
-            </div>
-            
+                </a>
+            </div>            
         </div>    
     </div>
     <div class="contact-container pin">

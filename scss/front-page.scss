@@ -14,7 +14,6 @@
         animation: scrolling 8s linear infinite;
     }
 
-
     .projets {
         display: flex;
         justify-content: center;
@@ -34,8 +33,7 @@
             flex-basis: 50%;
             padding: 30px;
             text-align: center;
-            // transform: scale(0); 
-            // animation: appear-grow .8s ease-out forwards;
+            opacity: 0;
 
             &:hover {
                 border: 1px solid var(--rose-gauche);
@@ -53,13 +51,11 @@
             }
 
             .description-self-container {
-
                 .btn-card {
                     margin-top: 20px;
                     font-size: 20px;
                 }
             }
-
         }
 
         .line-projets-about-container {
@@ -80,8 +76,7 @@
                 background: var(--bg-raye);
                 height: 60px;
                 border: 1px solid var(--light-light-black);
-                // transform: scale(0); 
-                // animation: appear-grow .8s ease-out forwards;
+                opacity: 0;
 
                 &:hover {
                     border: 1px solid var(--rose-gauche);
@@ -97,6 +92,7 @@
                 width: 100%;
                 height: auto;
                 flex: 1;
+                opacity: 0;
 
                 .about-section {
                     display: flex;
@@ -206,8 +202,7 @@
             border: 1px solid var(--light-light-black);
             gap: 1rem;
             padding: 10px;
-            // transform: scale(0); 
-            // animation: appear-grow .8s ease-out forwards;
+            opacity: 0;
 
             &:hover {
                 border: 1px solid var(--rose-gauche);
@@ -234,9 +229,7 @@
                     margin-top: 20px;
                     font-size: 20px;
                 }
-            }
-
-            
+            }            
         }
         
         .competences-section {
@@ -252,8 +245,7 @@
             border: 1px solid var(--light-light-black);
             gap: 1rem;
             padding: 10px;
-            // transform: scale(0); 
-            // animation: appear-grow .8s ease-out forwards;
+            opacity: 0;
 
             &:hover {
                 border: 1px solid var(--rose-gauche);
@@ -290,7 +282,6 @@
                     font-size: 20px;
                 }
             }
-
         }
 
         .contact-section {
@@ -306,6 +297,7 @@
             border: 1px solid var(--light-light-black);
             gap: 1rem;
             padding: 10px;
+            opacity: 0;
 
             &:hover {
                 border: 1px solid var(--rose-gauche);
@@ -369,8 +361,7 @@
             border: 1px solid var(--light-light-black);
             gap: 1rem;
             padding: 10px;
-            // transform: scale(0); 
-            // animation: appear-grow .8s ease-out forwards;
+            opacity: 0;
 
             &:hover {
                 border: 1px solid var(--rose-gauche);
@@ -402,7 +393,6 @@
                     font-size: 20px;
                 }
             }
-
         }
     }
 }
@@ -426,7 +416,6 @@
                     height: 100%;
                 }
             }
-
         } 
 
         .services-container {
@@ -479,8 +468,7 @@
     
             .competences-section {
                 flex-basis: 100%;
-            }
-    
+            }    
         }      
         
         .contact-container {
@@ -490,8 +478,7 @@
                         font-size: 22px;
                     }
                 }
-            }
-            
+            }            
         }
     }
 }

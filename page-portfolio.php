@@ -1,10 +1,6 @@
-<?php
+<?php get_header(); ?>
 
-
-get_header();
-?>
-
-<main class="page-portfolio">
+<main class="page-portfolio pin">
 
     <?php
         // WP_Query pour afficher les éléments du CPT "projet"
@@ -15,7 +11,7 @@ get_header();
 
         $query = new WP_Query($args);
     ?>
-        <div class="all-projects-text pin">
+        <div class="all-projects-text">
             <img class="image-star" src="<?php echo get_template_directory_uri() . './assets/images/star-2.png'; ?>" alt="signature">
             <h1>Tous mes projets</h1>
             <img class="image-star" src="<?php echo get_template_directory_uri() . './assets/images/star-2.png'; ?>" alt="signature">
